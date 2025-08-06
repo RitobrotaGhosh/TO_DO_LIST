@@ -43,7 +43,12 @@ Vanilla JavaScript: For all logic, including event handling, DOM manipulation, a
 
 
 Since this is a front-end only project, you do not need any complex setup or build process.
+
 Clone or Download the Repository: Get the project files onto your local machine.
+
 Ensure File Structure: Make sure the index.html, style.css, and script.js files are all in the same directory.
+
 Open in Browser: Simply open the index.html file in your favorite web browser (like Chrome, Firefox, or Edge).
+
+
 For the best development experience, you can use the Live Server extension in Visual Studio Code, which will automatically reload the page whenever you save a file.

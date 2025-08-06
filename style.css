@@ -1,0 +1,65 @@
+/* Custom styles and animations */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #771078 0%, #764ba2 100%);
+}
+
+/* Animation for new tasks fading in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for tasks fading out on deletion */
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+.task-item {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
+.task-item.removing {
+    animation: fadeOut 0.3s ease-in forwards;
+}
+
+/* Style for completed tasks */
+.completed span {
+    text-decoration: line-through;
+    color: #a0aec0; /* gray-500 */
+}
+
+/* Custom focus ring color */
+.form-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.5); /* indigo-400 with opacity */
+}
+
+/* Custom scrollbar for a cleaner look */
+#taskList::-webkit-scrollbar {
+    width: 8px;
+}
+#taskList::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+#taskList::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+#taskList::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
